@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: black;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -86,6 +86,583 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+    /**** DESKTOP STYLES ****/
+
+    @media only screen and (min-width: 1025px) {
+
+    body {
+      font-size: 1em;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0%;
+    }
+
+    /**** DESKTOP HEADER SECTION ****/
+
+    header {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-flow: row wrap;
+      padding-top: 80px;
+      padding-bottom: 140px;
+    }
+
+    .header-list {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      text-align: center;
+      font-family: 'Cinzel';
+      list-style: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2.3rem;
+    }
+
+    .content-wrapper {
+      justify-content: flex-end;
+      max-width: 1450px;
+      width: 85%;
+      text-align: center;
+    }
+
+    header nav {
+      margin-bottom: 90px;
+    }
+
+    .header-title { 
+      max-width: 100%;
+    }
+
+    #header-h1 {
+      width: 100%;
+      font-size: 7rem;
+      font-family: 'Petit Formal Script';
+    }
+
+    #header-h2 {
+      font-size: 5rem;
+      font-family: 'Cinzel';
+    }
+
+    #header-h3 {
+      font-size: 4rem;
+      font-family: 'Cinzel';
+    }
+
+    #header-h4 {
+      font-size: 3rem;
+      font-family: 'Philosopher';
+    }
+
+
+    /**** DESKTOP WORK SECTION ****/
+    
+    #work {
+      padding-top: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-flow: row wrap;
+    }
+
+    .project-wrapper {
+      justify-content: space-around;
+      display: flex;
+      align-items: stretch;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    .project-piece {
+      width: 10%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+  }
+
+
+   /**** MOBILE STYLING ****/
+
+@media (min-width: 320px) {
+
+ header, #work, #skill-set, #about-me, footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  overflow: hidden;
+ }
+
+ body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+ }
+
+ 
+ /**** MOBILE HEADER SECTION ****/
+
+ header {
+  background-image: linear-gradient(110deg, rgba(181,193,178,1) 23%, rgb(79, 134, 67) 78%);
+  padding-top: 30px;
+  padding-bottom: 60px;
+ }
+
+ .content-wrapper { 
+  width: 85%;
+ }
+
+ nav {
+  margin-bottom: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+ nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+  padding: 0;
+  text-align: center;
+  font-family: 'Cinzel';
+  text-transform: lowercase;
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.75em;
+ }
+
+ header a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+ }
+
+ header h1 {
+  font-family: 'Petit Formal Script';
+  font-size: 2.5em;
+ }
+
+ header h2 {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-size: 2em;
+ }
+
+ header h3 {
+  font-family: 'Cinzel';
+  padding-bottom: 20px;
+ }
+
+ header h4 {
+  font-family: 'Philosopher';
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  padding-left: 10%;
+ }
+
+
+
+ 
+ 
+
+
+ /**** MOBILE PROJECTS SECTION ****/
+
+ #work h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: 'Cinzel';
+ }
+
+ #proud {
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  font-style: italic;
+  font-family: 'Philosopher';
+ }
+
+ .project {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+ }
+
+ #work, #skill-set {
+  width: 100%;
+ }
+
+ #work {
+  padding-top: 60px;
+  background-color: #d6dbc4;
+  padding-bottom: 60px;
+}
+
+ #work p {
+  width: 100%;
+  padding-top: 2px;
+ }
+
+ .project-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+ }
+
+ button {
+  border-radius: 50%;
+  background-color: #e3e7a0;
+  padding: 0.75rem 3.75rem;
+  margin: 30px;
+ }
+
+ .project-img {
+  width: 85%;
+  vertical-align: middle;
+  padding-bottom: 20px;
+ }
+
+ .skill-span {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-style: italic;
+ }
+
+ .tool-span {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-style: italic;
+ }
+
+ .spans {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  width: 50%;
+ }
+ 
+ #work p {
+  padding-bottom: 5px;
+  text-align: center;
+  width: 75%
+ }
+
+ #work a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Cinzel';
+ }
+ 
+ 
+ /**** MOBILE SKILLS SECTION ****/
+
+
+ #skill-set {
+  text-align: center;
+  background-color: #e7f1dc;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+
+ .skill-set-list {
+  width: 100%;
+  text-align: center;
+ }
+
+ .skill {
+  background-color: #e3e7a0;
+  padding: 15px 0;
+  margin: 40px 40px;
+  border-radius: 25px;
+  border: 1px solid black;
+  font-family: 'Cinzel';
+  font-weight: bold;
+ }
+
+ #skill-set h2 {
+  font-family: 'Cinzel';
+  font-size: 1.8rem;
+ }
+
+ #skill-set h3 {
+  font-family: 'Philosopher';
+  font-style: italic;
+ }
+
+ /**** MOBILE ABOUT SECTION ****/ 
+
+ #about-me {
+  background-color: antiquewhite;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+ }
+
+ #about-me h2 {
+  font-family: 'Cinzel';
+  }
+
+ #about-me h3 {
+  font-family: 'Philosopher';
+ }
+
+  #about-picture {
+    width: 100%;
+    
+  }
+
+
+ /**** MOBILE FOOTER SECTION ****/
+
+ footer h4 {
+  font-family: 'Cinzel';
+ }
+
+ h5 {
+  font-size: 1.3em;
+  text-decoration: underline;
+  font-family: 'Philosopher';
+ }
+
+ #footer-header {
+  font-size: 1.9em;
+  padding-bottom: 30px;
+ }
+
+ footer {
+  background: linear-gradient(235deg, rgba(184,200,180,1) 23%, rgba(79, 134, 67) 78%);
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+ }
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 25px;
+}
+
+ul ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.location {
+  padding-left: 15px;
+}
+
+.copyright {
+  font-size: 0.5em;
+  font-family: 'Philosopher';
+  padding-top: 70px;
+}
+
+}
+
+
+
+@media only screen and (min-width: 961px) {
+
+
+  /**** TABLET HEADER SECTION ****/
+
+  header, #work, #skill-set, #about-me, footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+  }
+
+  header {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem
+  }
+
+  header h1 {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  header h2 {
+   font-size: 3.5rem;
+  }
+
+  header h3 {
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+  }
+
+  header h4 {
+    font-size: 2rem;
+  }
+
+
+  /**** TABLET PROJECTS SECTION ****/
+
+  #work h2 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  #work h3 {
+    font-size: 2rem;
+  }
+
+  .project-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-flow: row wrap;
+  }
+
+  #work img {
+    width: 90%;
+  }
+
+  #work p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  button {
+    border-radius: 50%;
+    width: 50%;
+    padding: 40px;
+  };
+
+  .skill-span {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .spans {
+    display: flex; 
+    justify-content: space-around;
+    align-items: stretch;
+    flex-flow: row wrap;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 20px;
+  }
+
+  
+  .tool-span {
+    text-decoration: underline;
+  }
+
+
+  /**** TABLET SKILLS SECTION ****/
+
+  #skill-set h2 {
+    font-size: 2.5rem;
+  }
+
+  #skill-set h3 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  .skill-set-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  #skill-set {
+    text-align: center;
+  }
+
+  .skill {
+    padding: 15px 0;
+    margin: 20px 0;
+    font-size: 1.125rem;
+    width: 45%;
+  }
+
+
+  /**** TABLET ABOUT SECTION ****/
+
+  #about-me img {
+    padding-bottom: 20px;
+  }
+
+  #about-me h2 {
+    font-size: 2.5rem;
+  }
+
+  #about-me h3 {
+    font-size: 2rem;
+  }
+
+  #about p {
+    font-size: 1.3rem;
+  }
+
+
+  /**** TABLET FOOTER SECTION ****/
+
+  #footer-header {
+    font-size: 2.5rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  .icons {
+    display: flex;
+    width: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+
+  footer img {
+    width: 80px;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    padding-top: 90px;
+    font-family: 'Philosopher';
+  }
+
+}
+
 
 
 
@@ -176,10 +753,6 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

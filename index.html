@@ -1,4 +1,12 @@
-<!doctype html>
+
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  
+
+  <!doctype html>
 <html class="no-js" lang="">
 
 <head>
@@ -18,61 +26,195 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Cinzel:wght@400;600&family=EB+Garamond:wght@500&family=Great+Vibes&family=Kalam:wght@700&family=Lexend&family=Montserrat:ital,wght@1,200&family=Original+Surfer&family=Petit+Formal+Script&family=Philosopher&family=Rampart+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<header>
-  <h1>Welcome</h1>
-  <h2>Hunter Gouldthorpe</h2>
-  <h3>Developer | Designer | Performer</h3>
-  <h4>I'm a Front End Web Developer in Salisbury, Massachusetts that enjoys creating 
-    visually appealing web pages!</h4>
-  </h4>
-</header>
-
-<div id="projects">
-  <h2>Projects</h2>
-  <h3>Stuff I'm pretty proud of - </h3>
-</div>
-
-<div id="guess-game">
-  <h3>Guess the Word Game</h3>
-  <a id="guess-img" href="https://huntscato.github.io/guess-the-word/">
-  <img src="img/guess.png" alt="A picture of the Guess the Word Game" />
-  </a>
-  <h4>An interactive game built with JavaScript that allows the user to make guesses to discover the hidden mystery word! 
-      Correctly guessed letters will display on the hidden word in real time. After all 8 chances are used, the user has the option to 
-      begin a new game, and the game restarts with a brand new randomly fetched word. Play as many times as you like!</h4>
-  </h4>
-</div>
-
-<div id="name-tag">
-  <h3>Name Tag Generator</h3>
-  <a id="nametag-img" href = "https://codesandbox.io/s/l8-build-your-name-tag-text-inputs-forked-7c4d6k">
-  </a>
-
-</div>
-
-<div id="about">
-  <h2>About Me</h2>
-  <h4>I began my interest in software engineering after finding myself wanting to take 
-    the reins of my professional career and challenge myself to upgrade my professional skills.
-    I believe my background in theatre and performing arts makes me a good candidate for employers looking 
-    for someone with strong collaboration skills, communication with team members and a willingness to 
-    quickly learn new and relevent skills. When I'm not at the computer, one can normally find me outside in the garden,
-    reading a good book with a cup of matcha, or hanging out with my dog!</h4>
-</div>
-
+<!-- **** HEADER SECTION **** -->
 
 <body>
+  <header>
+    <div class="content-wrapper">
+      <nav>
+        <ul class="header-list">
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#skill-set">Skills</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-title">
+        <h1 id="header-h1">~ Welcome ~</h1>
+        <h2 id="header-h2">Hunter <br> Gouldthorpe</h2>
+        <h3 id="header-h3">Developer | Designer</h3>
+        <h4 id="header-h4">I'm a Front End Web Developer based in Salisbury, Massachusetts that creates
+        visually appealing web pages.
+        </h4>
+      </div>
+    </div>
+  </header>
 
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <!-- **** PROJECTS SECTION **** -->
 
- 
+  <section id="work">
+    <div class="content-wrapper">
+      
+      <div id="projects">
+        <h2>- Projects -</h2>
+        <h3 id="proud">Stuff I'm pretty proud of - </h3>
+      </div>
+        
+      <div class="project-wrapper">
+        <div class="project-piece">
+          <h3 class="project">Guess the Word Game</h3>
+          <a href="https://huntscato.github.io/guess-the-word/">
+            <img class="project-img" src = "img/guess.png" alt = "An image of the 'Guess the Word' game." />
+          </a>
+          <p class="project-description">An interactive game built with JavaScript that allows the user to make guesses to discover the hidden mystery word! 
+            Correctly guessed letters will display on the hidden word in real time. After all 8 chances are used, the user has the option to 
+            begin a new game, and the game restarts with a brand new randomly fetched word. Play as many times as you like!</h4>
+          </p>
+
+          <button><a href="https://huntscato.github.io/guess-the-word/">Live Page</a></button>
+
+         
+          <p><span class="skill-span">Skills:</span>   JavaScript, Manipulating the DOM, CSS</p>
+          <p><span class="tool-span">Tools:</span>   GitHub, Visual Studio Code</p>
+         
+        </div>
+
+        <div class="project-piece">
+          <h3 class="project">Name Tag Generator</h3>
+          <a href = "https://codesandbox.io/s/l8-build-your-name-tag-text-inputs-forked-7c4d6k">
+            <img class="project-img" src = "img/name-tag.png" alt = "A picture of the 'Name Tag Generator' app." />
+          </a>
+          <p class="project-description">An app that creates bulk name tags using functional components and ES6 modules. The user types
+            in a name and submits it to create a new name tag featuring the entered name. The user can remove 
+            a name tag by clicking on the 'X' in the upper right corner of the name tag.
+          </p>
+
+          <button><a href="https://codesandbox.io/s/l8-build-your-name-tag-text-inputs-forked-7c4d6k">Live Page</a></button>
+
+          
+          <p><span class="skill-span">Skills:</span>   ES6, JSX, Managing Data Flow, React</p>
+          <p><span class="tool-span">Tools:</span>   CodeSandbox</p>
+          
+        </div>
+
+        <div class="project-piece">
+          <h3 class="project">Super Sticky Notes</h3>
+          <a href = "https://codesandbox.io/s/l14-finish-your-sticky-note-app-solution-forked-zt7r52?file=/src/Header.js" >
+            <img class="project-img" src = "img/sticky-note.png" alt = "An image of the 'Super Sticky Notes' app." />
+            </a>
+          <p class="project-description">An interactive app that allows the user to create virtual sticky notes on their computer to keep track of
+            various day-to-day items and reminders. Each note has a title section and a description section. Users can 
+            add a note by clicking '+ New Note' in the upper left corner of the app, and can search for notes using key words
+            in the search bar, which will filter, in real time, notes containing the entered key word. Users can remove a sticky
+            note in real time by clicking on the 'X' in the upper right corner of the note. This greenfield project also makes use of local storage 
+            on the user's browser.
+          </p>
+
+          <button><a href = "https://codesandbox.io/s/l14-finish-your-sticky-note-app-solution-forked-zt7r52?file=/src/Header.js">Live Page</a></button>
+
+       
+          <p><span class="skill-span">Skills:</span>   ES6, React, JSX, Manipulating the DOM, Managing Data Flow</p>
+          <p><span class="tool-span">Tools:</span>   CodeSandbox</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- **** SKILLS SECTION **** -->
+
+  <section id="skill-set">
+    
+    <div class="content-wrapper">
+      <div class="skill-header">
+        <h2>- Skills -</h2>
+        <h3>Things I'm good at -</h3>
+      </div>
+
+      <div class="skill-set-list">
+        <p class="skill">HTML</p>
+        <p class="skill">CSS</p>
+        <p class="skill">JavaScript</p>
+        <p class="skill">Git</p>
+        <p class="skill">GitHub</p>
+        <p class="skill">React</p>
+        <p class="skill">Responsive Web Development</p>
+        <p class="skill">Chrome DevTools</p>
+        <p class="skill">GitHub Pages</p>
+        <p class="skill">Visual Studio Code</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- **** ABOUT SECTION **** -->
+
+  <section id="about-me">
+
+    <div class="content-wrapper">
+      <div id="about">
+        <img id="about-picture" src = "img/hunter-1.png" alt = "A pretty darn good picture of me, if I do say so myself!" />
+        <h2>- About Me -</h2>
+        <h3>Theatre Major turned Pharmacy Technician turned Developer</h3>
+        <p>I began my interest in software engineering after finding myself wanting to take 
+          the reins of my professional career and challenge myself to upgrade my professional skills.
+          I believe my background in theatre and performing arts, and, of all things, retail pharmacy, make me a good candidate for employers looking 
+          for someone with strong collaboration skills, communication with team members and a willingness to 
+          quickly learn new and relevent skills. When I'm not at the computer, one can normally find me outside in the garden,
+          reading a good book with a cup of matcha, or hanging out with my dog!
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- **** CONTACT SECTION **** -->
+
+  <footer id="contact">
+
+    <div class="content-wrapper">
+      <div class="contact-options">
+        <div class="contact-info">
+          <h4 id="footer-header">- Let's have a chat! -</h4>
+          <h5 class="contact-title">Call Me</h5>
+            <p>(978)-270-6655</p>
+            <p>hgouldthorpe95@gmail.com</p>
+        </div>
+        <div class="follow">
+          <h5 class="contact-title">Beep Me</h5>
+          <ul class="icons">
+            <li>
+              <a href="https://www.linkedin.com/in/hunter-gouldthorpe-ba7a9923a/" target="_blank">
+                <img src="img/icons8-linkedin-50.png" alt="LinkedIn logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/huntscato" target="_blank">
+                <img src="img/icons8-github-50.png" alt="GitHub logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/huntergouldthorpe/" target="_blank">
+                <img src="img/icons8-instagram-50.png" alt="Instagram logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="location">
+          <h5 class="contact-title">If Ya Wanna Reach Me</h5>
+            <p>Salisbury, MA</p>
+            <p>Walk with me, talk with me!</p>
+        </div>
+        <p class="copyright">Copyright 2023 | Hunter Gouldthorpe</p>
+      </div>
+    </div>
+  </footer>
+
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
