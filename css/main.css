@@ -88,144 +88,7 @@ textarea {
    ========================================================================== */
 
 
-    /**** DESKTOP STYLES ****/
-
-    @media only screen and (min-width: 1200px) {
-
-    body {
-      font-size: 1em;
-      font-family: 'Open Sans', sans-serif;
-      margin: 0%;
-    }
-
-    /**** DESKTOP HEADER SECTION ****/
-
-    header {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      flex-flow: row wrap;
-      padding-top: 80px;
-      padding-bottom: 140px;
-    }
-
-    .header-list {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      text-align: center;
-      font-family: 'Cinzel';
-      list-style: none;
-      text-decoration: none;
-      text-align: center;
-      font-size: 1rem;
-    }
-
-    .content-wrapper {
-      justify-content: flex-end;
-      max-width: 1450px;
-      width: 85%;
-      text-align: center;
-    }
-
-    header nav {
-      margin-bottom: 90px;
-    }
-
-    .header-title { 
-      max-width: 100%;
-    }
-
-    #header-h1 {
-      width: 100%;
-      font-size: 4rem;
-      font-family: 'Petit Formal Script';
-    }
-
-    #header-h2 {
-      font-size: 3rem;
-      font-family: 'Cinzel';
-    }
-
-    #header-h3 {
-      font-size: 2rem;
-      font-family: 'Cinzel';
-    }
-
-    #header-h4 {
-      font-size: 1.5rem;
-      font-family: 'Philosopher';
-    }
-
-
-    /**** DESKTOP WORK SECTION ****/
-    
-    #work {
-      padding-top: 80px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      flex-flow: row wrap;
-    }
-
-    .project-wrapper {
-      justify-content: space-around;
-      display: flex;
-      align-items: stretch;
-      flex-flow: row wrap;
-      width: 100%;
-    }
-
-    .project-piece {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    
-  }
-
-
-  /**** DESKTOP FOOTER SECTION ****/
-
-   footer {
-    padding: 140px 0 140px 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-flow: row wrap;
-   }
-
-   .contact-info {
-    width: 33%;
-    margin: 80px 0 80px 0;
-   }
-
-   .follow {
-    width: 33%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 80px 0 80px 0;
-   }
-
-   .footer-content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-   }
-
-   #footer-header {
-    margin-bottom: 60px;
-   }
-
-
-
-
-
-   /**** MOBILE STYLING ****/
+    /**** MOBILE STYLING ****/
 
 
  header, #work, #skill-set, #about-me, footer {
@@ -499,6 +362,7 @@ textarea {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
+  width: 100%;
  }
 
 .icons {
@@ -533,7 +397,9 @@ textarea {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
 }
+
 
 
 
@@ -638,13 +504,13 @@ textarea {
   }
 
   .project-piece {
-    width: 45%;
-    align-items: center
+    width: 40%;
+    align-items: center;
+    margin: 0;
   }
 
-  .projec-wrapper {
-    max-width: 900px;
-    width: 90%;
+  .project-wrapper {
+    max-width: 100%;
   }
 
   /**** TABLET SKILLS SECTION ****/
@@ -718,10 +584,12 @@ textarea {
 
   footer {
     padding: 140px 0 140px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-flow: row wrap;
+    width: 100%;
    }
 
    .contact-info {
@@ -742,12 +610,193 @@ textarea {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
    }
 
    #footer-header {
     margin-bottom: 60px;
    }
 
+   .contact-options {
+    width: 100%;
+   }
+
+   .icons {
+    width: 80%;
+   }
+
+  }
+
+
+  /**** DESKTOP STYLES ****/
+
+  @media only screen and (min-width: 1200px) {
+
+    body {
+      font-size: 1em;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0%;
+    }
+
+    /**** DESKTOP HEADER SECTION ****/
+
+    header {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-flow: row wrap;
+      padding-top: 80px;
+      padding-bottom: 140px;
+    }
+
+    .header-list {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      text-align: center;
+      font-family: 'Cinzel';
+      list-style: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .content-wrapper {
+      justify-content: flex-end;
+      max-width: 1450px;
+      width: 85%;
+      text-align: center;
+    }
+
+    header nav {
+      margin-bottom: 90px;
+    }
+
+    .header-title { 
+      max-width: 100%;
+    }
+
+    #header-h1 {
+      width: 100%;
+      font-size: 4rem;
+      font-family: 'Petit Formal Script';
+    }
+
+    #header-h2 {
+      font-size: 3rem;
+      font-family: 'Cinzel';
+    }
+
+    #header-h3 {
+      font-size: 2rem;
+      font-family: 'Cinzel';
+    }
+
+    #header-h4 {
+      font-size: 1.5rem;
+      font-family: 'Philosopher';
+    }
+
+
+    /**** DESKTOP WORK SECTION ****/
+    
+    #work {
+      padding-top: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-flow: row wrap;
+    }
+
+    .project-wrapper {
+      justify-content: space-around;
+      display: flex;
+      align-items: stretch;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    .project-piece {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    /**** DESKTOP ABOUT SECTION ****/ 
+
+    #about-me {
+      width: 100%;
+    }
+
+    #about-picture {
+      width: 35%;
+      margin: 20px 0 40px 0;
+      object-fit: cover;
+    }
+
+    #about {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    .about-wrapper {
+      width: 58%;
+      text-align: left;
+    }
+
+    .about-content-wrapper {
+      max-width: 1450px;
+      width: 85%;
+    }
+
+
+    
+    
+  
+
+
+    /**** DESKTOP FOOTER SECTION ****/
+
+    footer {
+      padding: 140px 0 140px 0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    .contact-info {
+      width: 33%;
+      margin: 80px 0 80px 0;
+    }
+
+    .follow {
+      width: 33%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 80px 0 80px 0;
+    }
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    #footer-header {
+      margin-bottom: 60px;
+    }
+
+    .icons {
+      width: 100%;
+    }
   }
   
 
