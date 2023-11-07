@@ -118,7 +118,7 @@ textarea {
       list-style: none;
       text-decoration: none;
       text-align: center;
-      font-size: 2.3rem;
+      font-size: 1rem;
     }
 
     .content-wrapper {
@@ -138,22 +138,22 @@ textarea {
 
     #header-h1 {
       width: 100%;
-      font-size: 7rem;
+      font-size: 4rem;
       font-family: 'Petit Formal Script';
     }
 
     #header-h2 {
-      font-size: 5rem;
+      font-size: 3rem;
       font-family: 'Cinzel';
     }
 
     #header-h3 {
-      font-size: 4rem;
+      font-size: 2rem;
       font-family: 'Cinzel';
     }
 
     #header-h4 {
-      font-size: 3rem;
+      font-size: 1.5rem;
       font-family: 'Philosopher';
     }
 
@@ -186,19 +186,44 @@ textarea {
     
   }
 
+
   /**** DESKTOP FOOTER SECTION ****/
 
-    footer .content-wrapper {
-      max-width: 70%;
-      width: 85%;
-    }
+   footer {
+    padding: 140px 0 140px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+   }
 
-    .contact-options {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: flex-start;
-    }
+   .contact-info {
+    width: 33%;
+    margin: 80px 0 80px 0;
+   }
+
+   .follow {
+    width: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 80px 0 80px 0;
+   }
+
+   .footer-content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+   }
+
+   #footer-header {
+    margin-bottom: 60px;
+   }
+
+
+
+
 
    /**** MOBILE STYLING ****/
 
@@ -480,23 +505,34 @@ textarea {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding-right: 25px;
-}
-
-ul ol {
-  list-style: none;
-  margin: 0;
+  width: 100%;
   padding: 0;
-}
-
-.location {
-  padding-left: 15px;
 }
 
 .copyright {
   font-size: 0.5em;
   font-family: 'Philosopher';
   padding-top: 70px;
+}
+
+.contact-info {
+  width: 60%;
+  margin: 0 0 60px 0;
+}
+
+.follow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
+  margin: 0 0 60px 0;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 
@@ -680,46 +716,40 @@ ul ol {
 
   /**** TABLET FOOTER SECTION ****/
 
-  #contact {
+  footer {
+    padding: 140px 0 140px 0;
     display: flex;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
+    flex-flow: row wrap;
+   }
 
-  #footer-header {
-    font-size: 2.5rem;
-  }
+   .contact-info {
+    width: 33%;
+    margin: 80px 0 80px 0;
+   }
 
-  .contact-title {
-    font-size: 2rem;
-  }
-
-  footer p {
-    font-size: 1.5rem;
-  }
-
-  .icons {
+   .follow {
+    width: 33%;
     display: flex;
-    width: 20rem;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-left: 280px;
-    padding-right: 280px;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 80px 0 80px 0;
+   }
+
+   .footer-content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+   }
+
+   #footer-header {
+    margin-bottom: 60px;
+   }
+
   }
-
-  footer img {
-    width: 80px;
-  }
-
-  .copyright {
-    font-size: 1rem;
-    padding-top: 90px;
-    font-family: 'Philosopher';
-  }
-
-}
-
+  
 
 
 
