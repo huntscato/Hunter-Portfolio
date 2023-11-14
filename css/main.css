@@ -15,6 +15,7 @@ html {
   color: black;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior:smooth
 }
 
 /*
@@ -93,19 +94,23 @@ textarea {
 
  header, #work, #skill-set, #about-me, footer {
   display: flex;
-  justify-content: center;
-  text-align: center;
   flex-flow: row wrap;
+  justify-content: center;
   overflow: hidden;
- }
+  text-align: center;
+  }
 
  body {
-  font-size: 1em;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
  }
 
  
  /**** MOBILE HEADER SECTION ****/
+
+ .content-wrapper { 
+  width: 85%;
+ }
 
  header {
   background-image: linear-gradient(110deg, rgba(181,193,178,1) 23%, rgb(79, 134, 67) 78%);
@@ -113,33 +118,10 @@ textarea {
   padding-bottom: 60px;
  }
 
- .content-wrapper { 
-  width: 85%;
- }
-
- nav {
-  margin-bottom: 60px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
- nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 12px;
-  padding: 0;
-  text-align: center;
-  font-family: 'Cinzel';
-  text-transform: lowercase;
-  list-style: none;
-  text-decoration: none;
-  font-size: 0.75em;
- }
-
  header a {
   color: black;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
  }
 
  header h1 {
@@ -161,11 +143,30 @@ textarea {
  header h4 {
   font-family: 'Philosopher';
   font-weight: bold;
-  width: 80%;
-  text-align: center;
   padding-left: 10%;
+  text-align: center;
+  width: 80%;
  }
 
+
+ nav {
+  margin-bottom: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+ nav ul {
+  display: flex;
+  font-family: 'Cinzel';
+  font-size: 0.75em;
+  justify-content: space-between;
+  list-style: none;
+  margin: 12px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+ }
 
 
  
@@ -174,149 +175,162 @@ textarea {
 
  /**** MOBILE WORK SECTION ****/
 
- #work h2 {
-  width: 100%;
-  font-size: 1.8rem;
-  font-family: 'Cinzel';
+ button {
+  background-color: #e3e7a0;
+  border-radius: 50%;
+  margin: 30px;
+  padding: 0.75rem 3.75rem;
  }
 
- #proud {
-  font-size: 1.4rem;
+  .project-description {
+  text-align: left;
+  }
+
+  .project-img {
   padding-bottom: 20px;
-  font-style: italic;
-  font-family: 'Philosopher';
- }
+  vertical-align: middle;
+  width: 100%;
+  }
 
- .project {
-  text-decoration: underline;
+  .project-piece {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+  width: 100%;
+  }
+
+  .project-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  }
+
+  .project {
   font-size: 1.2rem;
   padding-bottom: 20px;
- }
-
- #work, #skill-set {
-  width: 100%;
- }
-
- #work {
-  padding-top: 60px;
-  background-color: #d6dbc4;
-  padding-bottom: 60px;
-}
-
- #work p {
-  width: 100%;
-  padding-top: 2px;
- }
-
- .project-piece {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 40px;
- }
-
- button {
-  border-radius: 50%;
-  background-color: #e3e7a0;
-  padding: 0.75rem 3.75rem;
-  margin: 30px;
- }
-
- .project-img {
-  width: 100%;
-  vertical-align: middle;
+  text-decoration: underline;
+  }
+ 
+  #proud { 
+  font-family: 'Philosopher';
+  font-size: 1.4rem;
+  font-style: italic;
   padding-bottom: 20px;
   }
 
- .skill-span {
+  .skill-span {
   font-family: 'Cinzel';
-  font-weight: bold;
   font-style: italic;
-  text-decoration: underline;
- }
-
- .tool-span {
-  font-family: 'Cinzel';
   font-weight: bold;
-  font-style: italic;
   text-decoration: underline;
- }
+  }
+  
+  .spans {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    width: 50%;
+  }
 
- .spans {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  width: 50%;
- }
+  .tool-span {
+    font-family: 'Cinzel';
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  #work {
+    background-color: #d6dbc4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #work a {
+    color: black;
+    font-family: 'Cinzel';
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+
+  #work h2 {
+    font-family: 'Cinzel';
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  #work p {
+    padding-bottom: 5px;
+    padding-top: 2px;
+    text-align: left;
+    width: 100%;
+  }
+
+
+  #work, #skill-set {
+    width: 100%;
+  }
  
- #work p {
-  padding-bottom: 5px;
-  text-align: center;
-  width: 75%
- }
 
- #work a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Cinzel';
- }
 
- .project-wrapper {
-  display: flex;
-  align-items: stretch;
-  flex-flow: row wrap;
- }
+
+
  
  
  /**** MOBILE SKILLS SECTION ****/
-
-
- #skill-set {
-  text-align: center;
-  background-color: #e7f1dc;
-  padding-top: 60px;
-  padding-bottom: 60px;
- }
-
- .skill-set-list {
-  width: 100%;
-  text-align: center;
- }
-
+ 
  .skill {
   background-color: #e3e7a0;
-  padding: 15px 0;
-  margin: 40px 40px;
-  border-radius: 25px;
   border: 1px solid black;
+  border-radius: 25px;
   font-family: 'Cinzel';
   font-weight: bold;
+  margin: 40px 40px;
+  padding: 15px 0;
  }
+ 
+ #skill-set {
+   background-color: #e7f1dc;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   text-align: center;
+  }
+  
+  #skill-set h2 {
+   font-family: 'Cinzel';
+   font-size: 1.8rem;
+  }
 
- #skill-set h2 {
-  font-family: 'Cinzel';
-  font-size: 1.8rem;
- }
+  #skill-set h3 {
+   font-family: 'Philosopher';
+   font-style: italic;
+  }
 
- #skill-set h3 {
-  font-family: 'Philosopher';
-  font-style: italic;
- }
+  .skill-set-list {
+   text-align: center;
+   width: 100%;
+  }
+  
+
+
 
  /**** MOBILE ABOUT SECTION ****/ 
 
+ .about-content-wrapper {
+  width: 85%;
+ }
+
  #about-me {
   background-color: antiquewhite;
-  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  justify-content: center;
   text-align: center;
-  flex-flow: row wrap;
+  width: 100%;
  }
 
  #about-me h2 {
@@ -331,79 +345,81 @@ textarea {
     width: 100%;
  }
 
- .about-content-wrapper {
-  width: 85%;
+ #about-me p {
+  text-align: left;
  }
 
 
-
-
+ 
+ 
  /**** MOBILE FOOTER SECTION ****/
+ 
+  .contact-info {
+    margin: 0 0 60px 0;
+    width: 60%;
+  }
+ 
+  .copyright {
+    font-family: 'Philosopher';
+    font-size: 0.5em;
+    padding-top: 70px;
+  }
+  
+  .follow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 0 60px 0;
+    width: 60%;
+  }
 
- footer h4 {
-  font-family: 'Cinzel';
- }
+  footer {
+    background: linear-gradient(235deg, rgba(184,200,180,1) 23%, rgba(79, 134, 67) 78%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 80px 0;
+    text-align: center;
+    width: 100%;
+  }
 
- h5 {
-  font-size: 1.3em;
-  text-decoration: underline;
-  font-family: 'Philosopher';
- }
+  footer a {
+    color: black;
+  }
 
- #footer-header {
-  font-size: 1.9em;
-  padding-bottom: 30px;
- }
+  .footer-content-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+  }
 
- footer {
-  background: linear-gradient(235deg, rgba(184,200,180,1) 23%, rgba(79, 134, 67) 78%);
-  padding: 80px 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: row wrap;
-  width: 100%;
- }
+  #footer-header {
+    font-size: 1.9em;
+    padding-bottom: 30px;
+  }
 
-.icons {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 100%;
-  padding: 0;
-}
+  footer h4 {
+    font-family: 'Cinzel';
+  }
+  
+  h5 {
+    font-family: 'Philosopher';
+    font-size: 1.3em;
+    text-decoration: underline;
+  }
 
-.copyright {
-  font-size: 0.5em;
-  font-family: 'Philosopher';
-  padding-top: 70px;
-}
-
-.contact-info {
-  width: 60%;
-  margin: 0 0 60px 0;
-}
-
-.follow {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 60%;
-  margin: 0 0 60px 0;
-}
-
-.footer-content-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
 
 
-
-
-
+ 
 
 @media only screen and (min-width: 768px) {
 
@@ -412,9 +428,9 @@ textarea {
 
   header, #work, #skill-set, #about-me, footer {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-    flex-flow: row wrap;
   }
 
   header {
@@ -422,99 +438,109 @@ textarea {
     padding-bottom: 80px;
   }
 
+  header h1 {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  header h2 {
+    font-size: 3.5rem;
+  }
+  
+  header h3 {
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+  }
+  
+  header h4 {
+    font-size: 2rem;
+  }
+  
   nav ul {
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem
   }
-
-  header h1 {
-    width: 100%;
-    font-size: 4rem;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-
-  header h2 {
-   font-size: 3.5rem;
-  }
-
-  header h3 {
-    font-size: 2.5rem;
-    padding-bottom: 40px;
-  }
-
-  header h4 {
-    font-size: 2rem;
-  }
-
-
+  
   /**** TABLET PROJECTS SECTION ****/
-
-  #work h2 {
-    width: 100%;
-    font-size: 2.5rem;
+  
+  button {
+    border-radius: 50%;
+    padding: 40px;
+    width: 50%;
   }
-
-  #work h3 {
-    font-size: 2rem;
+  
+  .project-piece {
+    align-items: center;
+    margin: 0;
+    width: 40%;
   }
 
   .project-wrapper {
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
     flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+
+  .skill-span {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .spans {
+    align-items: stretch;
+    display: flex; 
+    flex-flow: row wrap;
+    font-size: 1.1rem;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .tool-span {
+    text-decoration: underline;
   }
 
   #work img {
     width: 90%;
   }
 
+  #work h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  #work h3 {
+    font-size: 2rem;
+  }
+
   #work p {
-    width: 100%;
     font-size: 1.3rem;
-  }
-
-  button {
-    border-radius: 50%;
-    width: 50%;
-    padding: 40px;
-  };
-
-  .skill-span {
-    text-decoration: underline;
-    text-align: center;
-  }
-
-  .spans {
-    display: flex; 
-    justify-content: space-around;
-    align-items: stretch;
-    flex-flow: row wrap;
-    font-size: 1.1rem;
     width: 100%;
-    padding: 20px;
   }
+
+}
+
 
   
-  .tool-span {
-    text-decoration: underline;
-  }
-
-  .project-piece {
-    width: 40%;
-    align-items: center;
-    margin: 0;
-  }
-
-  .project-wrapper {
-    max-width: 100%;
-  }
 
   /**** TABLET SKILLS SECTION ****/
 
+  .skill {
+    font-size: 1.125rem;
+    margin: 20px 0;
+    padding: 15px 0;
+    width: 45%;
+  }
+  
+  #skill-set {
+    text-align: center;
+  }
+  
   #skill-set h2 {
     font-size: 2.5rem;
   }
@@ -526,32 +552,23 @@ textarea {
 
   .skill-set-list {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     width: 100%;
-    flex-flow: row wrap;
   }
 
-  #skill-set {
-    text-align: center;
-  }
 
-  .skill {
-    padding: 15px 0;
-    margin: 20px 0;
-    font-size: 1.125rem;
-    width: 45%;
-  }
 
 
   /**** TABLET ABOUT SECTION ****/
 
   #about {
-    padding: 80px 0;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    text-align: center;
     flex-flow: row wrap;
+    justify-content: center;
+    padding: 80px 0;
+    text-align: center;
+    width: 100%;
   }
 
   .about-content-wrapper {
@@ -559,18 +576,18 @@ textarea {
     width: 85%;
   }
 
-  #about-me img {
-    padding-bottom: 20px;
-  }
-
   #about-me h2 {
     font-size: 2.5rem;
   }
-
+  
   #about-me h3 {
     font-size: 2rem;
   }
 
+  #about-me img {
+    padding-bottom: 20px;
+  }
+  
   #about p {
     font-size: 1.3rem;
   }
@@ -582,50 +599,49 @@ textarea {
 
   /**** TABLET FOOTER SECTION ****/
 
-  footer {
-    padding: 140px 0 140px 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-flow: row wrap;
-    width: 100%;
-   }
-
-   .contact-info {
-    width: 33%;
+  .contact-info {
     margin: 80px 0 80px 0;
-   }
-
-   .follow {
-    width: 33%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 80px 0 80px 0;
-   }
-
-   .footer-content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-   }
-
-   #footer-header {
-    margin-bottom: 60px;
-   }
-
-   .contact-options {
-    width: 100%;
-   }
-
-   .icons {
-    width: 80%;
-   }
-
+   width: 33%;
   }
+
+  .contact-options {
+   width: 100%;
+  }
+  
+  .follow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 80px 0 80px 0;
+    width: 33%;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 140px 0 140px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-content-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #footer-header {
+    margin-bottom: 60px;
+  }
+
+  .icons {
+    width: 80%;
+  }
+
 
 
   /**** DESKTOP STYLES ****/
@@ -633,39 +649,59 @@ textarea {
   @media only screen and (min-width: 1200px) {
 
     body {
-      font-size: 1em;
       font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
       margin: 0%;
     }
-
+    
     /**** DESKTOP HEADER SECTION ****/
+    
+    .content-wrapper {
+      justify-content: flex-end;
+      max-width: 1450px;
+      text-align: center;
+      width: 85%;
+    }
 
     header {
       display: flex;
-      justify-content: center;
-      text-align: center;
       flex-flow: row wrap;
+      justify-content: center;
       padding-top: 80px;
       padding-bottom: 140px;
+      text-align: center;
+    }
+
+    #header-h1 {
+      font-family: 'Petit Formal Script';
+      font-size: 4rem;
+      width: 100%;
+    }
+
+    #header-h2 {
+      font-family: 'Cinzel';
+      font-size: 3rem;
+    }
+
+    #header-h3 {
+      font-family: 'Cinzel';
+      font-size: 2rem;
+    }
+
+    #header-h4 {
+      font-family: 'Philosopher';
+      font-size: 1.5rem;
     }
 
     .header-list {
       display: flex;
-      justify-content: space-around;
-      width: 100%;
-      text-align: center;
       font-family: 'Cinzel';
-      list-style: none;
-      text-decoration: none;
-      text-align: center;
       font-size: 1rem;
-    }
-
-    .content-wrapper {
-      justify-content: flex-end;
-      max-width: 1450px;
-      width: 85%;
+      justify-content: space-around;
+      list-style: none;
       text-align: center;
+      text-decoration: none;
+      width: 100%;
     }
 
     header nav {
@@ -676,76 +712,44 @@ textarea {
       max-width: 100%;
     }
 
-    #header-h1 {
-      width: 100%;
-      font-size: 4rem;
-      font-family: 'Petit Formal Script';
-    }
 
-    #header-h2 {
-      font-size: 3rem;
-      font-family: 'Cinzel';
-    }
 
-    #header-h3 {
-      font-size: 2rem;
-      font-family: 'Cinzel';
-    }
 
-    #header-h4 {
-      font-size: 1.5rem;
-      font-family: 'Philosopher';
-    }
 
 
     /**** DESKTOP WORK SECTION ****/
     
-    #work {
-      padding-top: 80px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      flex-flow: row wrap;
-    }
-
-    .project-wrapper {
-      justify-content: space-around;
-      display: flex;
-      align-items: stretch;
-      flex-flow: row wrap;
-      width: 100%;
-    }
-
+    
     .project-piece {
       align-items: center;
       display: flex;
-      justify-content: center;
       flex-direction: column;
+      justify-content: center;
+    }
+    
+    .project-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+    
+    #work {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding-top: 80px;
+      text-align: center;
+      width: 100%;
     }
 
     /**** DESKTOP ABOUT SECTION ****/ 
 
-    #about-me {
-      width: 100%;
-    }
-
-    #about-picture {
-      width: 35%;
-      margin: 20px 0 40px 0;
-      object-fit: cover;
-    }
-
     #about {
       display: flex;
-      justify-content: space-between;
       flex-flow: row wrap;
+      justify-content: space-between;
       width: 100%;
-    }
-
-    .about-wrapper {
-      width: 58%;
-      text-align: left;
     }
 
     .about-content-wrapper {
@@ -753,50 +757,64 @@ textarea {
       width: 85%;
     }
 
+    #about-me {
+      width: 100%;
+    }
 
-    
-    
-  
+    #about-picture {
+      margin: 20px 0 40px 0;
+      object-fit: cover;
+      width: 35%;
+    }
+
+    .about-wrapper {
+      width: 58%;
+      text-align: left;
+    }
+
 
 
     /**** DESKTOP FOOTER SECTION ****/
 
-    footer {
-      padding: 140px 0 140px 0;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      flex-flow: row wrap;
+    .contact-info {
+      margin: 80px 0 80px 0;
+      width: 33%;
+    }
+
+    .icons {
       width: 100%;
     }
 
-    .contact-info {
-      width: 33%;
-      margin: 80px 0 80px 0;
-    }
-
     .follow {
-      width: 33%;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
       margin: 80px 0 80px 0;
+      width: 33%;
+    }
+
+    footer {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 140px 0 140px 0;
+      text-align: center;
+      width: 100%;
     }
 
     .footer-content-wrapper {
+      align-items: flex-start;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      align-items: flex-start;
     }
 
     #footer-header {
       margin-bottom: 60px;
     }
 
-    .icons {
-      width: 100%;
-    }
+
+
   }
   
 
