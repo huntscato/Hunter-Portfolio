@@ -281,6 +281,7 @@ textarea {
  
  /**** MOBILE SKILLS SECTION ****/
  
+
  .skill {
   background-color: #e3e7a0;
   border: 1px solid black;
@@ -289,7 +290,7 @@ textarea {
   font-weight: bold;
   margin: 40px 40px;
   padding: 15px 0;
-  width: 100%;
+  width: 80%;
  }
  
  #skill-set {
@@ -393,7 +394,7 @@ textarea {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 85%;
+    width: 100%;
   }
 
   #footer-header {
@@ -524,7 +525,6 @@ textarea {
     width: 100%;
   }
 
-}
 
 
   
@@ -601,7 +601,7 @@ textarea {
   /**** TABLET FOOTER SECTION ****/
 
   .contact-info {
-    margin: 80px 0 80px 0;
+   margin: 80px 0 80px 0;
    width: 33%;
   }
 
@@ -643,7 +643,7 @@ textarea {
     width: 80%;
   }
 
-
+}
 
   /**** DESKTOP STYLES ****/
 
