@@ -234,6 +234,15 @@ textarea {
     width: 50%;
   }
 
+  #sticky {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
   .tool-span {
     font-family: 'Cinzel';
     font-style: italic;
@@ -501,6 +510,10 @@ textarea {
     justify-content: space-around;
     padding: 20px;
     width: 100%;
+  }
+
+  #sticky {
+    width: 80%;
   }
 
   .tool-span {
