@@ -175,23 +175,25 @@ textarea {
 
  /**** MOBILE WORK SECTION ****/
 
- button {
-  background-color: #e3e7a0;
-  border-radius: 50%;
-  margin: 30px;
-  padding: 0.75rem 3.75rem;
- }
-
-  .project-description {
-  text-align: left;
+ 
+ .project-description {
+   text-align: left;
   }
-
+  
   .project-img {
-  padding-bottom: 20px;
-  vertical-align: middle;
-  width: 100%;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    width: 100%;
   }
-
+  
+  .project-link {
+   background-color: #e3e7a0;
+   border: 3px solid black;
+   border-radius: 50%;
+   margin: 30px;
+   padding: 0.75rem 3.75rem;
+  }
+  
   .project-piece {
   align-items: center;
   display: flex;
@@ -241,6 +243,14 @@ textarea {
     justify-content: center;
     padding-bottom: 40px;
     width: 100%;
+  }
+
+  #sticky-button {
+    background-color: #e3e7a0;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: 30px;
+    padding: 0.75rem 3.75rem;
   }
 
   .tool-span {
@@ -415,10 +425,11 @@ textarea {
     font-family: 'Cinzel';
   }
   
-  h5 {
+  footer h5 {
     font-family: 'Philosopher';
     font-size: 1.3em;
     text-decoration: underline;
+    width: 100%;
   }
 
   .icons {
@@ -478,7 +489,7 @@ textarea {
   
   /**** TABLET PROJECTS SECTION ****/
   
-  button {
+  .project-link {
     border-radius: 50%;
     padding: 40px;
     width: 50%;
@@ -514,6 +525,12 @@ textarea {
 
   #sticky {
     width: 80%;
+  }
+
+  #sticky-button {
+    border-radius: 50%;
+    padding: 40px;
+    width: 26%;
   }
 
   .tool-span {
@@ -796,7 +813,7 @@ textarea {
     }
 
     .icons {
-      width: 100%;
+      width: 50%;
     }
 
     .follow {
