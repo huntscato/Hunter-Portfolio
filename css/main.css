@@ -148,6 +148,11 @@ textarea {
   width: 80%;
  }
 
+ #header-photo {
+  box-shadow: 0px 0px 10px 10px #579846;
+  width: 60%;
+ }
+
 
  nav {
   margin-bottom: 60px;
@@ -363,6 +368,7 @@ textarea {
  }
 
  #about-picture {
+    box-shadow: 0px 0px 10px 10px rgb(218, 192, 158);
     width: 100%;
  }
 
@@ -615,9 +621,7 @@ textarea {
     font-size: 2rem;
   }
 
-  #about-me img {
-    padding-bottom: 20px;
-  }
+
   
   #about p {
     font-size: 1.3rem;
@@ -706,6 +710,7 @@ textarea {
     #header-h1 {
       font-family: 'Petit Formal Script';
       font-size: 4rem;
+      text-align: left;
       width: 100%;
     }
 
@@ -722,6 +727,8 @@ textarea {
     #header-h4 {
       font-family: 'Philosopher';
       font-size: 1.5rem;
+      padding: 0;
+      text-align: left;
     }
 
     .header-list {
@@ -739,8 +746,16 @@ textarea {
       margin-bottom: 90px;
     }
 
+    #header-photo {
+      float: right;
+      margin: 20px 0 40px 0;
+      object-fit: cover;
+      width: 30%;
+    }
+
     .header-title { 
-      max-width: 100%;
+      max-width: 58%;
+      text-align: left;
     }
 
 
