@@ -692,7 +692,8 @@ textarea {
     /**** DESKTOP HEADER SECTION ****/
     
     .content-wrapper {
-      justify-content: flex-end;
+      align-items: center;
+      justify-content: space-around;
       max-width: 1450px;
       text-align: center;
       width: 85%;
@@ -750,7 +751,7 @@ textarea {
       float: right;
       margin: 20px 0 40px 0;
       object-fit: cover;
-      width: 30%;
+      width: 50%;
     }
 
     .header-title { 
