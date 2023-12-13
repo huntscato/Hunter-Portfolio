@@ -693,7 +693,8 @@ textarea {
     
     .content-wrapper {
       align-items: center;
-      justify-content: space-around;
+      flex-flow: row wrap;
+      justify-content: space-between;
       max-width: 1450px;
       text-align: center;
       width: 85%;
@@ -706,6 +707,7 @@ textarea {
       padding-top: 80px;
       padding-bottom: 80px;
       text-align: center;
+      width: 100%;
     }
 
     #header-h1 {
@@ -750,13 +752,19 @@ textarea {
     #header-photo {
       margin: 20px 0 40px 0;
       object-fit: cover;
-      width: 50%;
+      width: 100%;
     }
 
     .header-title { 
+      display: flex;
+      flex-flow: row wrap;
       justify-content: space-between;
       max-width: 58%;
       text-align: left;
+    }
+
+    .welcome-text {
+      width: 100%;
     }
 
 
