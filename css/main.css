@@ -756,15 +756,16 @@ textarea {
     }
 
     .header-title { 
+      align-items: center;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      max-width: 58%;
+      max-width: 100%;
       text-align: left;
     }
 
     .welcome-text {
-      width: 100%;
+      width: 50%;
     }
 
 
