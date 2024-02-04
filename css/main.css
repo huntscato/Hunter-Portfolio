@@ -124,6 +124,7 @@ textarea {
   text-decoration: none;
  }
 
+
  header h1 {
   font-family: 'Petit Formal Script';
   font-size: 2.5em;
@@ -241,22 +242,6 @@ textarea {
     width: 50%;
   }
 
-  #sticky {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-
-  #sticky-button {
-    background-color: #e3e7a0;
-    border: 3px solid black;
-    border-radius: 50%;
-    margin: 30px;
-    padding: 0.75rem 3.75rem;
-  }
 
   .tool-span {
     font-family: 'Cinzel';
@@ -529,15 +514,6 @@ textarea {
     width: 100%;
   }
 
-  #sticky {
-    width: 80%;
-  }
-
-  #sticky-button {
-    border-radius: 50%;
-    padding: 40px;
-    width: 26%;
-  }
 
   .tool-span {
     text-decoration: underline;
@@ -827,7 +803,6 @@ textarea {
       width: 58%;
       text-align: left;
     }
-
 
 
     /**** DESKTOP FOOTER SECTION ****/
