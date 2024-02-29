@@ -659,6 +659,10 @@ textarea {
 
   @media only screen and (min-width: 1200px) {
 
+    a:hover {
+      transform: scale(0.75);
+    }
+
     body {
       font-family: 'Open Sans', sans-serif;
       font-size: 1em;
@@ -750,7 +754,6 @@ textarea {
 
 
     /**** DESKTOP WORK SECTION ****/
-    
     
     .project-piece {
       align-items: center;
