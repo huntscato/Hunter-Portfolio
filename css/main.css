@@ -124,8 +124,7 @@ textarea {
   text-decoration: none;
  }
 
-
- header h1 {
+header h1 {
   font-family: 'Petit Formal Script';
   font-size: 2.5em;
  }
@@ -743,6 +742,11 @@ textarea {
       justify-content: space-between;
       max-width: 100%;
       text-align: left;
+    }
+
+    nav ul li:hover {
+      transform: scale(1.2);
+      transition: transform 0.5s;
     }
 
     .welcome-text {
