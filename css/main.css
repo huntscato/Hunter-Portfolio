@@ -661,6 +661,7 @@ textarea {
 
     a:hover {
       transform: scale(0.75);
+      transition: 1s; 
     }
 
     body {
