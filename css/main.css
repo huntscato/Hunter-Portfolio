@@ -120,7 +120,7 @@ textarea {
 
 header::before {
   background-attachment: fixed;
-  background-image: url("../img/backyard.jpeg");
+  background-image: url("../img/danforth.jpeg");
   background-size: cover;
   bottom: 0;
   content: "";
@@ -162,6 +162,12 @@ header h1 {
   width: 80%;
  }
 
+ header h1, header h2, header h3, header h4, header p {
+  text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
+      0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
+}
+
  #header-photo {
   box-shadow: 0px 0px 10px 10px #579846;
   width: 60%;
@@ -185,6 +191,9 @@ header h1 {
   padding: 0;
   text-align: center;
   text-decoration: none;
+  text-shadow: 
+  0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
+  0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
   text-transform: lowercase;
  }
 
@@ -200,15 +209,20 @@ header h1 {
    text-align: left;
   }
   
-  .project-img {
-    padding-bottom: 20px;
-    vertical-align: middle;
+  .project-piece img {
+    border: 2px solid rgb(150, 98, 3);
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.75);
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
     width: 100%;
   }
   
   .project-link {
-   background-color: #e3e7a0;
-   border: 3px solid black;
+   background-color: #dab080;
+   border: 2px solid rgb(145, 109, 2);
+   box-shadow: 0 0 30px rgba(220, 144, 78, 0.75);
    border-radius: 50%;
    margin: 30px;
    padding: 0.75rem 3.75rem;
@@ -265,7 +279,7 @@ header h1 {
   }
 
   #work {
-    background-color: #d6dbc4;
+    background-color: #9bbdcb;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -306,7 +320,7 @@ header h1 {
  
 
  .skill {
-  background-color: #e3e7a0;
+  background-color: #ffe1a8;
   border: 1px solid black;
   border-radius: 25px;
   font-family: 'Cinzel';
@@ -317,7 +331,7 @@ header h1 {
  }
  
  #skill-set {
-   background-color: #e7f1dc;
+   background-color: #c9cba3;
    padding-top: 60px;
    padding-bottom: 60px;
    text-align: center;
@@ -375,6 +389,10 @@ header h1 {
   text-align: left;
  }
 
+ .meet {
+  font-style: italic;
+ }
+
 
  
  
@@ -383,6 +401,12 @@ header h1 {
   .contact-info {
     margin: 0 0 60px 0;
     width: 60%;
+  }
+
+  .contact-title {
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
+    0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
   }
 
   .copyright {
@@ -411,7 +435,7 @@ header h1 {
 
   footer::before {
     background-attachment: fixed;
-    background-image: url("../img/beach.png");
+    background-image: url("../img/danforth-lake.jpeg");
     background-size: cover;
     bottom: 0;
     content: "";
@@ -450,6 +474,12 @@ header h1 {
     text-decoration: underline;
     width: 100%;
   }
+
+  footer h1, footer h2, footer h3, footer h4, footer p {
+    text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
+      0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
+}
 
   .icons {
     display: flex;
@@ -811,12 +841,14 @@ header h1 {
       align-items: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 30%;
     }
     
     .project-wrapper {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: wrap;
       justify-content: space-around;
       width: 100%;
     }
