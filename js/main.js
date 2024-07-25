@@ -9,4 +9,4 @@ document.addEventListener('DOMContentLoaded', function () {
       headerH2.style.transition = 'opacity 1s ease-in-out'; // Add transition for a smooth fade effect
       headerH2.style.opacity = '1';
     });
-  });
+  }); 

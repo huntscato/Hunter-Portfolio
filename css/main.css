@@ -136,7 +136,7 @@ header::before {
   color: black;
   cursor: pointer;
   text-decoration: none;
- }
+}
 
 header h1 {
   font-family: 'Petit Formal Script';
@@ -768,7 +768,7 @@ header h1 {
     @keyframes fadeInAndChangeColor {
       from {
         opacity: 0;
-        color: rgb(67,199,67);
+        color: rgb(129, 5, 237);
       }
       to {
         opacity: 1;
