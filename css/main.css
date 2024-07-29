@@ -206,6 +206,7 @@ header h1 {
 
  
  .project-description {
+  font-family: 'Philosopher';
    text-align: left;
   }
   
@@ -244,6 +245,7 @@ header h1 {
   }
 
   .project {
+  font-family: 'Philosopher';
   font-size: 1.2rem;
   padding-bottom: 20px;
   text-decoration: underline;
@@ -262,7 +264,11 @@ header h1 {
   font-weight: bold;
   text-decoration: underline;
   }
-  
+
+  .skills-and-tools {
+    text-align: center !important;
+  }
+
   .spans {
     align-items: center;
     display: flex;
@@ -326,7 +332,9 @@ header h1 {
   font-family: 'Cinzel';
   font-weight: bold;
   margin: 40px 40px;
+  opacity: 0;
   padding: 15px 0;
+  transition: opacity 1s ease-in-out;
   width: 80%;
  }
  
@@ -350,6 +358,10 @@ header h1 {
   .skill-set-list {
    text-align: center;
    width: 100%;
+  }
+
+  .skill.visible {
+    opacity: 1;
   }
   
 
@@ -381,11 +393,25 @@ header h1 {
  }
 
  #about-picture {
+    animation: glowing 2s infinite alternate;
+    border: 1px solid rgb(133, 87, 2);
     box-shadow: 0px 0px 20px 10px rgb(240, 181, 103);
     width: 100%;
  }
 
+ @keyframes glowing {
+  from {
+      box-shadow: 0 0 20px 10px rgba(240, 181, 103, 0.8);
+  }
+  to {
+      box-shadow: 0 0 25px 15px rgba(244, 188, 114, 0.9);
+  }
+}
+
+
+
  #about-me p {
+  font-family: 'Philosopher';
   text-align: left;
  }
 
