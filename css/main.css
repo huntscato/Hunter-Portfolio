@@ -779,6 +779,14 @@ header h1 {
       width: 100%;
     }
 
+    header a {
+      background-color: rgba(69, 42, 1, 0.1);
+      border: 3px solid rgba(0, 0, 0, 0.3);
+      border-radius: 7px;
+      padding: 5px;
+      text-align: center;
+    }
+
     #header-h1, #header-h2, #header-h3, .header-h4 {
       animation: fadeInAndChangeColor 1s ease-in-out forwards;
       transition: opacity 1s ease-in-out;
