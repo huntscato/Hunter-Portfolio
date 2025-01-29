@@ -12,10 +12,10 @@
    ========================================================================== */
 
 html {
-  color: black;
+  color: #222;
   font-size: 1em;
   line-height: 1.4;
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
 }
 
 /*
@@ -88,892 +88,487 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-    /**** MOBILE STYLING ****/
-
-
- header, #work, #skill-set, #about-me, footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  overflow: hidden;
-  text-align: center;
-  }
-
- body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
- }
-
- 
- /**** MOBILE HEADER SECTION ****/
-
- .content-wrapper { 
-  width: 85%;
- }
-
- header {
-  padding-top: 30px;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-header::before {
-  background-attachment: fixed;
-  background-image: url("../img/danforth.jpeg");
-  background-size: cover;
-  bottom: 0;
-  content: "";
-  left: 0;
-  opacity: 0.6; /* Adjust the opacity as needed */
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
- header a {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-header h1 {
-  font-family: 'Petit Formal Script';
-  font-size: 2.5em;
- }
-
- header h2 {
-  font-family: 'Cinzel';
-  font-weight: bold;
-  font-size: 2em;
- }
-
- header h3 {
-  font-family: 'Cinzel';
-  padding-bottom: 20px;
- }
-
- header h4 {
-  font-family: 'Philosopher';
-  font-weight: bold;
-  padding-left: 10%;
-  text-align: center;
-  width: 80%;
- }
-
- header h1, header h2, header h3, header h4, header p {
-  text-shadow: 
-      0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
-      0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
-}
-
- #header-photo {
-  box-shadow: 0px 0px 10px 10px #579846;
-  width: 60%;
- }
-
-
- nav {
-  margin-bottom: 60px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
- nav ul {
-  display: flex;
-  font-family: 'Cinzel';
-  font-size: 0.75em;
-  font-weight: bold;
-  justify-content: space-between;
-  list-style: none;
-  margin: 12px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 
-  0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
-  0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
-  text-transform: lowercase;
- }
-
-
- 
- 
-
-
- /**** MOBILE WORK SECTION ****/
-
- 
- .project-description {
-  font-family: 'Philosopher';
-   text-align: left;
-  }
-  
-  .project-piece img {
-    border: 2px solid rgb(150, 98, 3);
-    border-radius: 50px;
-    box-shadow: 0 0 30px rgba(255, 165, 0, 0.75);
-    height: auto;
-    max-height: 250px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .project-link {
-   background-color: #dab080;
-   border: 2px solid rgb(145, 109, 2);
-   box-shadow: 0 0 30px rgba(220, 144, 78, 0.75);
-   border-radius: 50%;
-   margin: 30px;
-   padding: 0.75rem 3.75rem;
-  }
-  
-  .project-piece {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 40px;
+.content-wrapper {
   width: 100%;
-  }
-
-  .project-wrapper {
-  align-items: flex-start;
-  display: flex;
-  flex-flow: row wrap;
-  }
-
-  .project {
-  font-family: 'Philosopher';
-  font-size: 1.2rem;
-  padding-bottom: 20px;
-  text-decoration: underline;
-  }
- 
-  #proud { 
-  font-family: 'Philosopher';
-  font-size: 1.4rem;
-  font-style: italic;
-  padding-bottom: 20px;
-  }
-
-  .skill-span {
-  font-family: 'Cinzel';
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: underline;
-  }
-
-  .skills-and-tools {
-    text-align: center !important;
-  }
-
-  .spans {
-    align-items: center;
-    display: flex;
-    text-align: center;
-    width: 50%;
-  }
-
-
-  .tool-span {
-    font-family: 'Cinzel';
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  #work {
-    background-color: #9bbdcb;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  #work a {
-    color: black;
-    font-family: 'Cinzel';
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-
-  #work h2 {
-    font-family: 'Cinzel';
-    font-size: 1.8rem;
-    width: 100%;
-  }
-
-  #work p {
-    padding-bottom: 5px;
-    padding-top: 2px;
-    text-align: left;
-    width: 100%;
-  }
-
-
-  #work, #skill-set {
-    width: 100%;
-  }
- 
-
-
-
-
- 
- 
- /**** MOBILE SKILLS SECTION ****/
- 
-
- .skill {
-  background-color: #ffe1a8;
-  border: 1px solid black;
-  border-radius: 25px;
-  font-family: 'Cinzel';
-  font-weight: bold;
-  margin: 40px 40px;
-  opacity: 0;
-  padding: 15px 0;
-  transition: opacity 1s ease-in-out;
-  width: 80%;
- }
- 
- #skill-set {
-   background-color: #c9cba3;
-   padding-top: 60px;
-   padding-bottom: 60px;
-   text-align: center;
-  }
-  
-  #skill-set h2 {
-   font-family: 'Cinzel';
-   font-size: 1.8rem;
-  }
-
-  #skill-set h3 {
-   font-family: 'Philosopher';
-   font-style: italic;
-  }
-
-  .skill-set-list {
-   text-align: center;
-   width: 100%;
-  }
-
-  .skill.visible {
-    opacity: 1;
-  }
-  
-
-
-
- /**** MOBILE ABOUT SECTION ****/ 
-
- .about-content-wrapper {
-  width: 85%;
- }
-
- #about-me {
-  background-color: rgb(129, 108, 80);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-  width: 100%;
- }
-
- #about-me h2 {
-  font-family: 'Cinzel';
-  }
-
- #about-me h3 {
-  font-family: 'Philosopher';
- }
-
- #about-picture {
-    animation: glowing 2s infinite alternate;
-    border: 1px solid rgb(133, 87, 2);
-    box-shadow: 0px 0px 20px 10px rgb(240, 181, 103);
-    width: 100%;
- }
-
- @keyframes glowing {
-  from {
-      box-shadow: 0 0 20px 10px rgba(240, 181, 103, 0.8);
-  }
-  to {
-      box-shadow: 0 0 25px 15px rgba(244, 188, 114, 0.9);
-  }
 }
 
-
-
- #about-me p {
-  font-family: 'Philosopher';
-  text-align: left;
- }
-
- .about-wrapper {
-  color: black;
- }
-
- .meet {
-  font-style: italic;
- }
-
-
- 
- 
- /**** MOBILE FOOTER SECTION ****/
- 
-  .contact-info {
-    margin: 0 0 60px 0;
-    width: 60%;
-  }
-
-  .contact-title {
-    text-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
-    0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
-  }
-
-  .copyright {
-    font-family: 'Philosopher';
-    font-size: 0.5em;
-    padding-top: 70px;
-  }
-  
-  .follow {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 0 0 60px 0;
-    width: 60%;
-  }
-
-  footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 80px 0;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-
-  footer::before {
-    background-attachment: fixed;
-    background-image: url("../img/danforth-lake.jpeg");
-    background-size: cover;
-    bottom: 0;
-    content: "";
-    left: 0;
-    opacity: 0.9; /* Adjust the opacity as needed */
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-
-  footer a {
-    color: black;
-  }
-
-  .footer-content-wrapper {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  #footer-header {
-    font-size: 1.9em;
-    padding-bottom: 30px;
-  }
-
-  footer h4 {
-    font-family: 'Cinzel';
-  }
-  
-  footer h5 {
-    font-family: 'Philosopher';
-    font-size: 1.3em;
-    text-decoration: underline;
-    width: 100%;
-  }
-
-  footer h1, footer h2, footer h3, footer h4, footer p {
-    text-shadow: 
-      0 0 10px rgba(255, 255, 255, 0.7), /* Outer glow */
-      0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
-}
-
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-  }
-
-
- 
-
-@media only screen and (min-width: 768px) {
-
-
-  /**** TABLET HEADER SECTION ****/
-
-  header, #work, #skill-set, #about-me, footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center;
-  }
-
-  header {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-
-  header h1 {
-    font-size: 4rem;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-    width: 100%;
-  }
-  
-  header h2 {
-    font-size: 3.5rem;
-  }
-  
-  header h3 {
-    font-size: 2.5rem;
-    padding-bottom: 40px;
-  }
-  
-  header h4 {
-    font-size: 2rem;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.4rem
-  }
-  
-  /**** TABLET PROJECTS SECTION ****/
-  
-  .project-link {
-    border-radius: 50%;
-    padding: 40px;
-    width: 50%;
-  }
-  
-  .project-piece {
-    align-items: center;
-    margin: 0;
-    width: 40%;
-  }
-
-  .project-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    max-width: 100%;
-  }
-
-  .skill-span {
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  .spans {
-    align-items: stretch;
-    display: flex; 
-    flex-flow: row wrap;
-    font-size: 1.1rem;
-    justify-content: space-around;
-    padding: 20px;
-    width: 100%;
-  }
-
-
-  .tool-span {
-    text-decoration: underline;
-  }
-
-  #work img {
-    width: 90%;
-  }
-
-  #work h2 {
-    font-size: 2.5rem;
-    width: 100%;
-  }
-
-  #work h3 {
-    font-size: 2rem;
-  }
-
-  #work p {
-    font-size: 1.3rem;
-    width: 100%;
-  }
-
-
-
-  
-
-  /**** TABLET SKILLS SECTION ****/
-
-  .skill {
-    font-size: 1.125rem;
-    margin: 20px 0;
-    padding: 15px 0;
-    width: 45%;
-  }
-  
-  #skill-set {
-    text-align: center;
-  }
-  
-  #skill-set h2 {
-    font-size: 2.5rem;
-  }
-
-  #skill-set h3 {
-    font-size: 2rem;
-    padding-bottom: 20px;
-  }
-
-  .skill-set-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-
-
-
-
-  /**** TABLET ABOUT SECTION ****/
-
-  #about {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 80px 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .about-content-wrapper {
-    max-width: 900px;
-    width: 85%;
-  }
-
-  #about-me h2 {
-    font-size: 2.5rem;
-  }
-  
-  #about-me h3 {
-    font-size: 2rem;
-  }
-
-
-  
-  #about p {
-    font-size: 1.3rem;
-  }
-
-  #about-picture {
-    width: 60%;
-  }
-
-
-  /**** TABLET FOOTER SECTION ****/
-
-  .contact-info {
-   margin: 80px 0 80px 0;
-   width: 33%;
-  }
-
-  .contact-options {
-   width: 100%;
-  }
-  
-  .follow {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 80px 0 80px 0;
-    width: 33%;
-  }
-
-  footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 140px 0 140px 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .footer-content-wrapper {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  #footer-header {
-    margin-bottom: 60px;
-  }
-
-  .icons {
-    width: 80%;
-  }
-
-}
-
-  /**** DESKTOP STYLES ****/
-
-  @media only screen and (min-width: 1200px) {
-
-    a:hover {
-      transform: scale(0.75);
-      transition: 1s; 
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1em;
-      margin: 0%;
-    }
-    
-    /**** DESKTOP HEADER SECTION ****/
-    
-    .content-wrapper {
-      align-items: center;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      max-width: 1450px;
-      text-align: center;
-      width: 85%;
-    }
-
-    header {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      padding-top: 80px;
-      padding-bottom: 80px;
-      text-align: center;
-      width: 100%;
-    }
-
-    header a {
-      background-color: rgba(69, 42, 1, 0.1);
-      border: 3px solid rgba(0, 0, 0, 0.3);
-      border-radius: 7px;
-      padding: 5px;
-      text-align: center;
-    }
-
-    #header-h1, #header-h2, #header-h3, .header-h4 {
-      animation: fadeInAndChangeColor 1s ease-in-out forwards;
-      transition: opacity 1s ease-in-out;
-    }
-
-    #header-h1 {
-      font-family: 'Petit Formal Script';
-      font-size: 4rem;
-      text-align: center;
-      width: 100%;
-    }
-    
-    @keyframes fadeInAndChangeColor {
-      from {
+/**** MOBILE STYLING ****/
+
+  /**** HEADER SECTION ****/
+
+      header {
+        background: linear-gradient(to bottom right, #0f121f, #4f60ab, #0f121f);
+        color: white;
+        font-family: 'Instrument Sans';
+        padding: 20px;
+        text-align: center;
+      }
+
+      header img {
+        background: linear-gradient(to bottom, #edb18e, #e2ca9e); 
+        border: 1px solid black; 
+        border-radius: 7px;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .menu-toggle {
+        background-color: #2c7cf4;
+        border: none; 
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      .menu-toggle:focus {
+        outline: none;
+      }
+
+      .nav-bar {
+        align-items: center;
+        border-radius: 10px;
+        color: #00303F;
+        position: relative;
+      }
+
+      .nav-bar ul {
+        background-color: #f3e3b5;
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-bar ul.active {
+        display: flex;
+      }
+
+      .nav-bar ul li{ 
+        border-bottom: 1px solid #555;
+        padding: 10px;
+      }
+
+      .nav-bar ul li a {
+        color: #003;
+        display: block;
+        text-decoration: none;
+      }
+
+    /**** SKILLS AND TOOLS SECTION ****/
+
+      .fade-in {
         opacity: 0;
-        color: rgb(129, 5, 237);
+        transition: opacity 1s ease-in-out;
       }
-      to {
+
+      .fade-in.visible {
         opacity: 1;
-        color: black;
       }
-    }
+
+      .skills {
+        text-align: center;
+      }
+
+      .skills-and-tools {
+        font-weight: bold;
+      }
+
+      .skills-and-tools span {
+        text-decoration: underline;
+      }
+
+      .skills-and-tools-section {
+        background: #d2d2d2;
+        font-family: 'Instrument Sans';
+        padding: 20px;
+      }
+
+      .skills h2 {
+        text-decoration: underline;
+      }
+
+      .skills li {
+        background-color: rgb(32, 35, 89);
+        border: 2px solid #3ece42;
+        border-radius: 20px;
+        color: white;
+        list-style: none;
+        margin: 10px;
+        padding: 8px;
+      }
+
+      .skills-list {
+        text-align: center;
+      }
+
+      .skills ul {
+        padding: 10px;
+      }
+
+      .tools {
+        text-align: center;
+      }
+
+      .tools h2 {
+        text-decoration: underline;
+      }
+
+      .tools li {
+        background-color: rgb(32, 35, 89);
+        border: 2px solid #3ece42;
+        border-radius: 20px;
+        color: white;
+        list-style: none;
+        margin: 10px;
+        padding: 8px;
+      }
+
+      .tools ul {
+        padding: 10px;
+      }
+
+    /**** PROJECTS SECTION ****/
+
+      .project-name {
+        text-decoration: underline;
+      }
+
+      .project-piece {
+        padding: 15px;
+      }
+      
+      .project-piece img {
+        border: 5px solid black;
+        border-radius: 20px;;
+        width: 55%;
+      }
+
+      .projects {
+        background: linear-gradient(to bottom right, #172357, #ab834f, #172357);
+        color: white;
+        font-family: 'Instrument Sans';
+        padding: 20px;
+        text-align: center;
+      }
+
+      .projects a {
+        color: white;
+      }
+
+      .projects h2 {
+        text-decoration: underline;
+      }
+
+    /**** ABOUT SECTION ****/
+
+      .about {
+        background: #d2d2d2;
+        font-family: 'Instrument Sans';
+        padding: 20px;
+        text-align: center;
+      }
+
+      .about h2 {
+        text-decoration: underline;
+      }
+
+      .about img {
+        border: 2px solid rgb(9, 72, 2);
+        border-radius: 50%;
+        width: 50%;
+      }
+
+      .meet {
+        font-style: italic;
+      }
+
+    /**** FOOTER SECTION ****/
+
+      .contact {
+        background: linear-gradient(to bottom right, #172357, #4f60ab, #172357);
+        color: white;
+        font-family: 'Instrument Sans';
+        padding: 20px;
+        text-align: center;
+      }
+
+      .contact a {
+        color: white;
+      }
+
+      .contact h2 {
+        text-decoration: underline;
+      }
+
+      .contact h4 {
+        text-decoration: underline;
+      }
+
+      .copyright {
+        margin-top: 50px;
+        font-size: 0.5em;
+      }
+
+      .icon {
+        padding: 10px;
+      }
+
+      .site-source {
+        font-size: 0.3em;
+      }
+
+/**** TABLET STYLING ****/
+
+  @media (min-width: 768px) {
+
+    /**** HEADER SECTION ****/
+
+      header img {
+        width: 50%;
+      }
+
+    /**** SKILLS AND TOOLS SECTION ****/
+
+      .skills-and-tools-section {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .skills {
+        margin-right: 40px;
+        width: 50%;
+      }
+
+      .skills, .tools {
+        display: flex; 
+        flex: 1;
+        flex-direction: column;
+        margin-right: 20px;
+      }
+      
+      .skills-list, .tools-list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .tools {
+        width: 50%;
+      }
+    
 
 
-    #header-h2 {
-      font-size: 3rem;
-    }
+    /**** PROJECTS SECTION ****/
 
-    #header-h3 {
-      font-family: 'Cinzel';
-      font-size: 2rem;
-    }
-
-    .header-h4 {
-      font-family: 'Philosopher';
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    .header-list {
-      display: flex;
-      font-family: 'Cinzel';
-      font-size: 1rem;
-      justify-content: space-around;
-      list-style: none;
-      text-align: center;
-      text-decoration: none;
-      width: 100%;
-    }
-
-    header nav {
-      margin-bottom: 90px;
-    }
-
-    #header-photo {
-      margin: 20px 0 40px 0;
-      object-fit: cover;
-      width: 100%;
-    }
-
-    .header-title { 
+    .project-content {
       align-items: center;
       display: flex;
-      flex-flow: row wrap;
       justify-content: space-between;
-      max-width: 100%;
-      text-align: left;
-    }
-
-    nav ul li:hover {
-      transform: scale(1.2);
-      transition: transform 0.5s;
-    } 
-
- 
-
-    .welcome-text {
-      text-align: center;
       width: 100%;
     }
 
-
-
-
-
-
-    /**** DESKTOP WORK SECTION ****/
-    
     .project-piece {
       align-items: center;
+      border-top: 2px solid rgba(0, 0, 0, 0.126);
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      width: 30%;
-    }
-    
-    .project-wrapper {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: space-around;
-      width: 100%;
-    }
-    
-    #work {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      padding-top: 80px;
-      text-align: center;
-      width: 100%;
+      margin: 20px 0;
     }
 
-    /**** DESKTOP ABOUT SECTION ****/ 
-
-    #about {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      width: 100%;
+    .project-piece img {
+      width: 80%;
     }
 
-    .about-content-wrapper {
-      max-width: 1450px;
-      width: 85%;
-    }
-
-    #about-me {
-      width: 100%;
-    }
-
-    #about-picture {
-      margin: 20px 0 40px 0;
-      object-fit: cover;
-      width: 35%;
-    }
-
-    .about-wrapper {
-      width: 58%;
+    .project-text {
       text-align: left;
-    }
-
-
-    /**** DESKTOP FOOTER SECTION ****/
-
-    .contact-info {
-      margin: 80px 0 80px 0;
-      width: 33%;
-    }
-
-    .icons {
       width: 50%;
     }
 
-    .follow {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      margin: 80px 0 80px 0;
-      width: 33%;
-    }
+    /**** ABOUT SECTION ****/
 
-    footer {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      padding: 140px 0 140px 0;
-      text-align: center;
-      width: 100%;
-    }
+      .about {
+        padding: 20px;
+      }
 
-    .footer-content-wrapper {
-      align-items: flex-start;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-    }
+     .about-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      } 
 
-    #footer-header {
-      margin-bottom: 60px;
-    }
+      .about img {
+        float: left;
+        width: 48%;
+      }
 
+      .about-text {
+        text-align: left;
+        width: 50%;
+      }
+
+    /**** FOOTER SECTION ****/
+
+      .call {
+        padding: 40px;
+      }
+
+      .contact {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact img {
+        padding: 20px;
+      }
+
+      .contact-info {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .socials {
+        padding: 40px;
+      }
+
+      .walk {
+        padding: 40px;
+      }
 
 
   }
-  
 
+
+/**** DESKTOP STYLING ****/
+
+@media (min-width: 1200px) {
+
+  /**** HEADER SECTION ****/
+
+  header img {
+    display: none;
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  .header-photo {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-bar {
+    background-color: #f3e4b5;
+    left: 50%;
+    margin-top: 10px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+
+  .nav-bar ul {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .nav-bar ul li {
+    border-bottom: none;
+  }
+
+  .nav-bar ul li a {
+    padding-bottom: 2px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .nav-bar ul li a::after {
+    background-color: black;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .nav-bar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .titles {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  .top-bar {
+    margin-bottom: 200px;
+    position: fixed;
+    width: 100%;
+  }
+
+  /**** SKILLS AND TOOLS SECTION ****/
+
+  .skills-list li {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .skills-list li:hover {
+    transform: scale(1.1);
+  }
+
+  .tools-list li {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .tools-list li:hover {
+    transform: scale(1.1);
+  }
+
+  /**** PROJECTS SECTION ****/
+
+  .project-name {
+    font-size: 1.5em;
+  }
+
+  .project-piece img {
+    margin-left: 20%;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+
+  .project-piece img:hover {
+    transform: scale(1.1);
+  }
+
+  .project-text {
+    font-size: 1.3em;
+  }
+
+  /**** ABOUT SECTION ****/
+
+  .about img {
+    margin-left: 10%; 
+    width: 30%;
+  }
+
+}
 
 
 /* ==========================================================================
@@ -1063,6 +658,10 @@ header h1 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

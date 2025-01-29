@@ -1,16 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const skills = document.querySelectorAll('.skill');
+    const toggleButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-bar ul');
   
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Stop observing the visible element
-      }
+    toggleButton.addEventListener('click', () => {
+      menu.classList.toggle('active');
     });
-  }, { threshold: 0.1 });
-  
-  skills.forEach(skill => {
-    observer.observe(skill);
   });
-});
+
+  function fadeInOnScroll() {
+    const elements = document.querySelectorAll('.fade-in');
+
+    elements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (elementTop < windowHeight) {
+        element.classList.add('visible');
+      }
+    })
+  }
+
+  window.addEventListener('scroll', fadeInOnScroll);
