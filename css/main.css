@@ -466,6 +466,7 @@ textarea {
 
   .nav-bar {
     background-color: #f3e4b5;
+    border: 2px solid black;
     left: 50%;
     margin-top: 10px;
     padding: 20px 0;
@@ -525,20 +526,8 @@ textarea {
 
   /**** SKILLS AND TOOLS SECTION ****/
 
-  .skills-list li {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .skills-list li:hover {
-    transform: scale(1.1);
-  }
-
-  .tools-list li {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .tools-list li:hover {
-    transform: scale(1.1);
+  .skills-list li:hover, .tools-list li:hover {
+    transform: scale(1.1); 
   }
 
   /**** PROJECTS SECTION ****/
