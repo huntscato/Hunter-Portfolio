@@ -1,37 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.nav-bar ul');
+const dropdownButton = document.querySelector('.dropdown-button');
+const dropdownContent = document.querySelector('.dropdown-content');
 
-  toggleButton.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
+dropdownButton.addEventListener('click', () => {
+  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
 });
-
-function fadeInOnScroll() {
-  const elements = document.querySelectorAll('.fade-in-skills');
-
-  elements.forEach(element => {
-    const elementTop = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (elementTop < windowHeight) {
-      element.classList.add('visible');
-    }
-  });
-}
-
-function fadeInProjectScroll() {
-  const elements = document.querySelectorAll('.fade-in');
-
-  elements.forEach(element => {
-    const elementTop = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (elementTop < windowHeight) {
-      element.classList.add('visible');
-    }
-  });
-}
-
-window.addEventListener('scroll', fadeInOnScroll);
-window.addEventListener('scroll', fadeInProjectScroll);
