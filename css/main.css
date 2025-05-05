@@ -93,7 +93,9 @@ textarea {
     color: #3e603e;
     font-family: Arial, sans-serif;
     margin: 0;
+    opacity: 0;
     padding: 0;
+    transition: opacity 1.5s ease-in-out;
   }
 
   .content-wrapper {
@@ -131,6 +133,10 @@ textarea {
     transform: translateX(-50%) translateY(-10px);
     z-index: 1;
   }
+
+  .dropdown-content.show {
+    display: block;
+  }
   
   .dropdown-content a {
     color: #517a50;
@@ -156,6 +162,8 @@ textarea {
   }
 
   .title-block img {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
     width: 100%;
   }
 
