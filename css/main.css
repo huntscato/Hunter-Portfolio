@@ -184,6 +184,10 @@ textarea {
     width: 100%;
   } 
 
+  #title-photo p {
+    text-align: center;
+  }
+
 
   /**** SKILLS AND TOOLS SECTION ****/
 
@@ -355,6 +359,10 @@ textarea {
     font-size: 2em;
   }
 
+  #title-photo p {
+    font-size: 1.3em;
+  }
+
   /**** SKILLS AND TOOLS ****/
 
   #skills-and-tools h3 {
@@ -394,7 +402,7 @@ textarea {
   /**** ABOUT ****/
 
   #about img {
-    width: 60%;
+    width: 45%;
   }
 
   #about p {
@@ -473,7 +481,7 @@ textarea {
 
   .title-block img {
     margin-top: 40px;
-    width: 30%;
+    width: 40%;
   }
 
   #title-photo {
@@ -482,12 +490,17 @@ textarea {
   }
 
   #title-photo h1 {
-    text-align: left;
+    font-size: 2.5em;
+    text-align: center;
   }
 
   #title-photo img {
     border: 0.5px solid black; 
     width: 100%;
+  }
+
+  #title-photo p {
+    font-size: 1.7em;
   }
 
   /**** SKILLS AND TOOLS ****/
@@ -537,15 +550,25 @@ textarea {
     display: flex;
     align-items: center;
   }
+
+  #about img {
+    width: 80%;
+  }
   
   .about-img {
-    flex: 1; /* Takes up space for the image */
+    flex: 1; 
   }
   
   #about .about-text {
-    flex: 1; /* Takes up space for the text */
-    padding-left: 20px; /* Optional: add some space between text and image */
+    flex: 1; 
+    padding-left: 20px; 
   }
+
+  #about p {
+    font-size: 1.1em;
+    text-align: left;
+  }
+
 
 }
   
